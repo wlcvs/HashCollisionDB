@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="submit_hash_style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <form>
+            <label for="hash">Hash:</label>
+            <input type="text" id="hash" name="hash" required>
+
+            <label for="algoritmos-hash">Algoritmo:</label>
+            <select id="algoritmos-hash" name="algoritmos-hash" required>
+                <option value="sha-1">SHA-1</option>
+                <option value="md5">MD5</option>
+                <option value="md4">MD4</option>                
+            </select>
+
+            <label for="algoritmo-ausente">Se o algoritmo que você utilizou não estiver na lista, insira ele a seguir:</label>
+            <input type="text" id="algoritmo-ausente" name="algoritmo-ausente">
+
+            <label for="arquivo">Faça upload de qualquer arquivo necessário no campo a seguir:</label>
+            <input type="file" id="arquivo" name="arquivo"/>
+
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" rows="6" cols="40" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
